@@ -7,11 +7,11 @@ DEFAULT_CONFIG = {
         os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
         "dataflows/data_cache",
     ),
-    # LLM settings
+    # LLM settings (via LiteLLM proxy -> ChatGPT Pro subscription)
     "llm_provider": "openai",
-    "deep_think_llm": "gpt-5.2",
-    "quick_think_llm": "gpt-5-mini",
-    "backend_url": "https://api.openai.com/v1",
+    "deep_think_llm": "chatgpt-gpt-5.4",
+    "quick_think_llm": "chatgpt-gpt-5.4-mini",
+    "backend_url": "http://127.0.0.1:24000/v1",
     # Provider-specific thinking configuration
     "google_thinking_level": None,      # "high", "minimal", etc.
     "openai_reasoning_effort": None,    # "medium", "high", "low"
